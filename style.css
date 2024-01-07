@@ -57,6 +57,7 @@ button:hover{
 .container .faq-headline{
     display: flex;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .container .faq-headline h1{
@@ -79,12 +80,17 @@ button:hover{
 {
     color: var(--grayish-purple);
     background-color: var(--white);
-    /* max-height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 200ms ease; */
-    padding: 1.5rem 0;
+    transition: max-height 200ms ease;
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+.accordion-description p
+{
+    padding: 1.5rem 0;
+
 }
 
 /* Footer */
@@ -93,4 +99,10 @@ button:hover{
     position: absolute;
     text-align: center;
     width: 100%;
+}
+
+@media (max-width: 540px) {
+    body{
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
 }
